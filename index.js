@@ -26,10 +26,10 @@ for (const folder of commandFolders)
 }
 
 // fires when bot is ready
-client.on("ready", () =>
-{
-    console.log("I am ready!");
-});
+client.on("disconnect", () => { console.log("disconnected"); });
+
+client.on("ready", () => { console.log("ready"); });
+
 
 // fires when the bot sees a message
 client.on('message', message => {
@@ -52,7 +52,7 @@ client.on('message', message => {
     catch (error)
     {
         console.error(error);
-        message.reply('there was an error trying to execute that command!');
+        message.reply(`there was an error trying to execute ${command}!`);
     }
 });
 
