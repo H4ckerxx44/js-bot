@@ -192,3 +192,10 @@ fabric.properties
 # custom
 config.json
 
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/csv-plugin.xml
+/.idea/discord.xml
+/.idea/javascript_discord_bot.iml
+/.idea/jsLibraryMappings.xml
+/.idea/modules.xml
+/.idea/vcs.xml
